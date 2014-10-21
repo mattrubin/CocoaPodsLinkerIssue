@@ -3,7 +3,9 @@
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-pod 'AFNetworking', '1.3.2'
+target 'CocoapodsLinkerIssue' do
+    pod 'AFNetworking', '1.3.2'
+end
 
 target 'Library' do
     pod 'AFNetworking', '1.3.2'
