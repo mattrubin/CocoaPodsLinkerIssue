@@ -3,10 +3,14 @@
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'CocoapodsLinkerIssue' do
+def import_pods
     pod 'AFNetworking', '1.3.2'
 end
 
+target 'CocoapodsLinkerIssue' do
+    import_pods
+end
+
 target 'Library' do
-    pod 'AFNetworking', '1.3.2'
+    import_pods
 end
